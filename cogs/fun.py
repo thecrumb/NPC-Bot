@@ -23,7 +23,7 @@ class Fun(commands.Cog):
     async def on_message(self, message):
         if message.content.endswith('?'):
             if (' or ' in message.content.lower() or
-                    any(message.content.lower().startswith(starter) for starter in idk)):
+                    any(message.content.lower().startswith(starter) for starter in Fun.idk)):
                 await message.channel.send("I don't know")
                 return
             await message.channel.send(random.choice(['Yes', 'No']))
