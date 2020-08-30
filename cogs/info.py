@@ -9,7 +9,7 @@ class Info(commands.Cog):
     async def about(self, ctx):
         embed = discord.Embed(
             title = 'About NPC',
-            description = 'NPC! Use .help to see all the Commands'
+            description = 'NPC! Use ?help to see all the Commands'
         )
         await ctx.send(embed=embed)
 
