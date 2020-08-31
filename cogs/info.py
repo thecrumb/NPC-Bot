@@ -15,11 +15,24 @@ class Info(commands.Cog):
 
     @commands.command()
     async def invite(self, ctx):
+        """Sends the invite link for this bot"""
         embed = discord.Embed(
             title = 'Invite Link',
             url = 'https://www.google.com/',
             description = 'Add NPC to another server!',
         )
+        await ctx.send(embed=embed)
+
+    @commands.command()
+    async def help(self, ctx):
+        embed = discord.Embed(
+            title = 'Help',
+            description = 'something',
+            color = discord.Color.red()
+        )
+        embed.add_field(name='something', value='something')
+        embed.add_field(name='something', value='something')
+        embed.add_field(name='something', value='something')
         await ctx.send(embed=embed)
 
     @commands.command()
