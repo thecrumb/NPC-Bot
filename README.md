@@ -1,3 +1,3 @@
 # NPC-Bot
 
-Answers all your questions... like an NPC.
+A Discord bot that answers all your questions... like an NPC.
